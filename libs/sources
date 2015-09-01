@@ -1,0 +1,8 @@
+TARGETNAME=libs
+TARGETPATH=..\..\bin\lib
+TARGETTYPE=DRIVER_LIBRARY
+INCLUDES=.; ..\include; 
+SOURCES=\
+	bitset.c \
+	winapi.c \
+	

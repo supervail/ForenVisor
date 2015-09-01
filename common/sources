@@ -1,0 +1,33 @@
+TARGETNAME=Vis
+TARGETPATH=..\..\bin
+TARGETTYPE=DRIVER
+TARGETLIBS=..\..\bin\lib\*\vmx.lib \
+		..\..\bin\lib\*\libs.lib 
+INCLUDES=.; ..\include; 
+SOURCES=\
+	perf.c \
+	arch.c \
+	snprintf.c \
+	print_infos.c \
+	example_guest_mem_dump.c \
+    setup.c \
+	hvm.c \
+    p2m.c \
+	ppt.c \
+	common.c \
+	traps.c \
+	memory.c \
+	emulate.c \
+	io.c \
+	keyboard.c \
+	nic.c \
+	pci_init.c
+	
+	
+I386_SOURCES=\
+    cpuid.asm \
+    common-asm.asm \
+    regs.asm \
+    vmx-asm.asm \
+    msr.asm 
+
